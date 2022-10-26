@@ -108,7 +108,7 @@ ul {
 
   }
   .card {
-    max-width: 500px;
+    min-width: 500px;
     padding: 40px;
     border-radius: 4px;
     margin: 20px auto;
@@ -120,7 +120,7 @@ ul {
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    max-width: 480px;
+    min-width: 480px;
     margin: 20px auto;
     padding: 2px 0px;
     /* background-color: red; */
@@ -129,7 +129,7 @@ ul {
     font-size: 24px;
   }
   .card {
-    max-width: 450px;
+    min-width: 450px;
     margin: 15px auto;
     border-radius: 4px;
     /* background-color: yellow; */
