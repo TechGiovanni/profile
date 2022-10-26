@@ -23,8 +23,9 @@ ul {
 }
 
 .container {
-  width:700px;
+  width: 700px;
   margin: 40px auto;
+  position: relative;
 }
 .header-text {
   font-size: 32px;
@@ -58,10 +59,12 @@ ul {
 }
 
 .card {
-  width: 700px;
+  width: 90%;
   padding: 40px;
   background-color: #fff;
-  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   border-radius: 4px;
 }
 .follow-text {
@@ -85,59 +88,48 @@ ul {
   font-size: 50px;
   color: rgb(230, 230, 230)
 }
-@media (max-width: 960px) {
+@media screen and (max-width: 60em) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
+  body {
+    margin: 0 auto;
   }
-}
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
+    margin: 40px auto;
   }
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 45em) {
   /* For a screen < 720px, this CSS will be read */
   .container {
-    width: 550px;
-    margin: 0px auto;
-    padding: 5px 5px;
-    /* background-color: red; */
-
-  }
-  .card {
-    min-width: 500px;
-    padding: 40px;
-    border-radius: 4px;
-    margin: 20px auto;
-
+    width: 90%;
+    margin: 40px auto;
   }
 }
 
 
-@media (max-width: 540px) {
+@media screen and (max-width: 33.75em) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    min-width: 480px;
-    margin: 20px auto;
-    padding: 2px 0px;
-    /* background-color: red; */
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 0px;
+  }
+  .card {
+    /* width: 90%; */
+    margin-bottom: 10px;
   }
   .header-text {
     font-size: 24px;
   }
-  .card {
-    min-width: 450px;
-    margin: 15px auto;
-    border-radius: 4px;
-    /* background-color: yellow; */
-  }
   .bio {
-    font-size: 16px;
+    font-size: 14px;
   }
   a {
     font-size: 14px;
   }
+  .btn-a{
+    padding: 15px 15px;
+  }
+
 }
